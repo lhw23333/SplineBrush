@@ -4,3 +4,7 @@
 ## 第三个按钮生成Spline 并销毁标记点
 ## 第四个按钮生成会加入起始点
 ## 支持Ctrl z 和ctrl y功能
+
+
+
+## 生成Spline后，可以再Detaile面板中AutoMesh标签下，设置Distance间隔距离并选取需要生成Mesh的资源，之后点击CreateMesh按钮生成
