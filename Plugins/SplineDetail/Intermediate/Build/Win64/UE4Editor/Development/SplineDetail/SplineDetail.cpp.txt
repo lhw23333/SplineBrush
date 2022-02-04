@@ -1,0 +1,2 @@
+F:\UE_spline\spline\Plugins\SplineDetail\Intermediate\Build\Win64\UE4Editor\Development\SplineDetail\Definitions.SplineDetail.h
+F:\UE_spline\spline\Plugins\SplineDetail\Source\SplineDetail\Public\SplineDetail.h

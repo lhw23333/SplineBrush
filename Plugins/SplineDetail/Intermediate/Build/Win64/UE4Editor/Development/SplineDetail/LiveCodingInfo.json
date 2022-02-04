@@ -1,0 +1,9 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.SplineDetail.cpp.obj": [
+			"SplineDetail.cpp.obj",
+			"MyClassDetails.cpp.obj"
+		]
+	}
+}

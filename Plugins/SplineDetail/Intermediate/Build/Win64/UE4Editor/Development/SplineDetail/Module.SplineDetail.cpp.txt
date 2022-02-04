@@ -1,0 +1,16 @@
+F:\UE_spline\spline\Plugins\SplineDetail\Intermediate\Build\Win64\UE4Editor\Development\SplineDetail\Definitions.SplineDetail.h
+F:/UE_spline/spline/Plugins/SplineDetail/Source/SplineDetail/Private/SplineDetail.cpp
+F:\UE_spline\spline\Plugins\SplineDetail\Source\SplineDetail\Public\SplineDetail.h
+F:\UE_spline\spline\Plugins\SplineDetail\Source\SplineDetail\Public\MyClassDetails.h
+F:\UE_4.26\Engine\Source\Editor\DetailCustomizations\Public\DetailCustomizations.h
+F:\UE_4.26\Engine\Source\Editor\PropertyEditor\Public\DetailLayoutBuilder.h
+F:\UE_4.26\Engine\Source\Editor\UnrealEd\Public\AssetThumbnail.h
+F:\UE_4.26\Engine\Source\Editor\UnrealEd\Public\TickableEditorObject.h
+F:\UE_4.26\Engine\Source\Editor\PropertyEditor\Public\IDetailPropertyRow.h
+F:\UE_4.26\Engine\Source\Editor\PropertyEditor\Public\IDetailCustomization.h
+F:/UE_spline/spline/Plugins/SplineDetail/Source/SplineDetail/Public/MyClassDetails.cpp
+F:\UE_4.26\Engine\Source\Editor\PropertyEditor\Public\DetailCategoryBuilder.h
+F:\UE_4.26\Engine\Source\Editor\PropertyEditor\Public\IDetailCustomNodeBuilder.h
+F:\UE_4.26\Engine\Source\Editor\PropertyEditor\Public\DetailBuilderTypes.h
+F:\UE_4.26\Engine\Source\Editor\PropertyEditor\Public\DetailWidgetRow.h
+F:\UE_4.26\Engine\Source\Runtime\Slate\Public\Widgets/Layout/SSpacer.h

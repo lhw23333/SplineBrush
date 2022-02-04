@@ -1,0 +1,2 @@
+F:\UE_spline\spline\Plugins\Blank\Intermediate\Build\Win64\UE4Editor\Development\Blank\Definitions.Blank.h
+F:\UE_spline\spline\Plugins\Blank\Source\Blank\Public\Blank.h

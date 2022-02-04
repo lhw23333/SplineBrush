@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-SplineDetail-0002.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"F:\UE_spline\spline\Intermediate\Build\Win64\splineEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"F:\UE_spline\spline\Plugins\SplineDetail\Intermediate\Build\Win64\UE4Editor\Development\SplineDetail\Module.SplineDetail.cpp.obj"
+"F:\UE_spline\spline\Plugins\SplineDetail\Intermediate\Build\Win64\UE4Editor\Development\SplineDetail\Default.rc2.res"
+/OUT:"F:\UE_spline\spline\Plugins\SplineDetail\Intermediate\Build\Win64\UE4Editor\Development\SplineDetail\UE4Editor-SplineDetail-0002.lib"
+/INCLUDE:IMPLEMENT_MODULE_SplineDetail
