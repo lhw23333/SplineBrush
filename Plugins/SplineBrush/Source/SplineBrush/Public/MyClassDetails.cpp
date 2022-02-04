@@ -86,6 +86,46 @@ void FMyClassDetails::CustomizeDetails(IDetailLayoutBuilder& DetailBuilder)
 			]
 		]
 	];
+
+	LimitMinPitch.Bind(this,&FMyClassDetails::GetMinPich);
+	CustCategory.AddCustomRow(LOCTEXT("CustRow", "CustRow"), false).NameContent()
+	[
+		SNew(STextBlock)
+		.Text(FText::FromString("Limit MinPitch"))
+	].ValueContent()
+	[
+		SNew(SVerticalBox)
+		+ SVerticalBox::Slot()
+		.VAlign(VAlign_Center)
+		[
+			SNew(SSpinBox<float>)
+			.Value(LimitMinPitch)
+			.OnValueChanged_Lambda([](float InValue)
+			{
+				AMyActor::MinPitch = InValue;
+			})
+		]
+	];
+
+	LimitMaxPitch.Bind(this,&FMyClassDetails::GetMaxPitch);
+	CustCategory.AddCustomRow(LOCTEXT("CustRow", "CustRow"), false).NameContent()
+	[
+		SNew(STextBlock)
+		.Text(FText::FromString("Limit MinPitch"))
+	].ValueContent()
+	[
+		SNew(SVerticalBox)
+		+ SVerticalBox::Slot()
+		.VAlign(VAlign_Center)
+		[
+			SNew(SSpinBox<float>)
+			.Value(LimitMaxPitch)
+			.OnValueChanged_Lambda([](float InValue)
+			{
+				AMyActor::MaxPitch = InValue;
+			})
+		]
+	];
 	
 	
 }
@@ -118,6 +158,18 @@ void FMyClassDetails::ChangeNeedCreateMeshType(const FAssetData& AssetData)
 	{
 		AMyActor::NeedCreateMesh = StaticMesh;
 	}
+}
+
+
+float FMyClassDetails::GetMaxPitch()const
+{
+	return AMyActor::MaxPitch;
+}
+
+
+float FMyClassDetails::GetMinPich()const
+{
+	return AMyActor::MinPitch;
 }
 
 

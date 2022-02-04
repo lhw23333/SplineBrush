@@ -92,7 +92,7 @@ bool FSplineBrushEdMode::InputKey(FEditorViewportClient* ViewportClient, FViewpo
 
 	if(bToolActive)
 	{
-		if (Key == EKeys::LeftMouseButton && Event == IE_Pressed  && IsCtrlDown(Viewport))
+		if (Key == EKeys::LeftMouseButton && Event == IE_Pressed  && IsCtrlDown(Viewport) && BrushActor != nullptr)
 		{
 			StartSplineBrushTrace(ViewportClient);
 			

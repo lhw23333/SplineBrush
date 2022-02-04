@@ -22,9 +22,17 @@ public:
 	
 	TAttribute<float> MeshDiatance;
 
+	TAttribute<float> LimitMinPitch;
+
+	TAttribute<float> LimitMaxPitch;
+	
 	TAttribute<FText> NeedCreateMeshName;
 
 	FText GetNeedCreateMeshName() const;
+
+	float GetMaxPitch()const;
+
+	float GetMinPich()const;
 	
 	float GetMeshDistance()const;
 };

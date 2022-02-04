@@ -2,11 +2,6 @@
 
 
 #include "MyActor.h"
-
-#include <Actor.h>
-#include <algorithm>
-
-
 #include "Components/SplineComponent.h"
 
 // Sets default values
@@ -22,6 +17,9 @@ AMyActor::AMyActor()
 }
 float AMyActor::MeshDistance = 10;
 UStaticMesh* AMyActor::NeedCreateMesh = nullptr;
+float AMyActor::MaxPitch = 90;
+float AMyActor::MinPitch = 30;
+
 // Called when the game starts or when spawned
 void AMyActor::BeginPlay()
 {
@@ -56,6 +54,13 @@ FReply AMyActor::OnCreateMeshClicked()
 			FVector StartLocation = Spline->GetLocationAtDistanceAlongSpline(MeshDistance* i,ESplineCoordinateSpace::Local);
 			FVector LookLocation = Spline->GetLocationAtDistanceAlongSpline(MeshDistance* i *1.1f,ESplineCoordinateSpace::Local);
 			FRotator ComRotation = (LookLocation - StartLocation).Rotation();
+			ComRotation.Normalize();
+			UE_LOG(LogTemp,Warning,TEXT("%s"),*ComRotation.ToString());
+			if(ComRotation.Pitch>MaxPitch || ComRotation.Pitch<MinPitch)
+			{
+				
+				continue;
+			}
 			UStaticMeshComponent * StaticMeshCom = NewObject<UStaticMeshComponent>(this,FName(MeshName));
 			StaticMeshCom->RegisterComponent();
 			StaticMeshCom->SetStaticMesh(NeedCreateMesh);

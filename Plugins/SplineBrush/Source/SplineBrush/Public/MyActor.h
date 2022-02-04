@@ -34,8 +34,12 @@ public:
 	FReply OnCreateMeshClicked();
 
 
-	static  UStaticMesh* NeedCreaeMesh;
-	//static  void SetMeshDistance(float InValue);
+	static  UStaticMesh* NeedCreateMesh;
+
+	static float MinPitch;
+
+	static float MaxPitch;
+
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 };

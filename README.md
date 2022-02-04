@@ -8,3 +8,6 @@
 
 
 ## 生成Spline后，可以再Detaile面板中AutoMesh标签下，设置Distance间隔距离并选取需要生成Mesh的资源，之后点击CreateMesh按钮生成
+
+## 支持设置陡峭范围，只有再范围内的位置才会生成Mesh
+

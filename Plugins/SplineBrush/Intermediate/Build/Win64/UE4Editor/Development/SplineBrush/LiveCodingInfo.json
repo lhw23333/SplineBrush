@@ -2,11 +2,11 @@
 	"RemapUnityFiles": 
 	{
 		"Module.SplineBrush.cpp.obj": [
-			"SplineBrushEdModeToolkit.cpp.obj",
-			"MyActor.cpp.obj",
 			"SplineBrush.cpp.obj",
-			"SplineBrushEdMode.cpp.obj",
+			"SplineBrushEdModeToolkit.cpp.obj",
 			"SSplinePalette.cpp.obj",
+			"MyActor.cpp.obj",
+			"SplineBrushEdMode.cpp.obj",
 			"MyClassDetails.cpp.obj"
 		],
 		"Module.SplineBrush.gen.cpp.obj": [
